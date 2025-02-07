@@ -56,7 +56,7 @@ const footer = () => {
               </form>
             </div>
           </div>
-          <p className="text-center mt-8 text-sm">Made With Love By Finland All Rights Reserved</p>
+          <p className="text-center mt-8 text-sm">Made With Love By Finland @| All Rights Reserved</p>
         </div>
       </footer>
     </div>

@@ -1,4 +1,4 @@
-import { Cardo } from "next/font/google";
+//import { Cardo } from "next/font/google";
 import { Product } from "../../../types/products";
 
 

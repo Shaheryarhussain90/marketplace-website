@@ -1,58 +1,48 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'
 
-const green = () => {
+const ProductCard123 = () => {
   return (
     <div>
-      <div
-  className="flex flex-col bg-white rounded-md border border-solid border-neutral-200"
-  role="region"
-  aria-label="Product showcase"
->
-  <div className="flex overflow-hidden flex-col items-center px-20 w-full bg-teal-700 max-md:px-5 max-md:max-w-full">
-    <div className="flex overflow-hidden flex-col pt-28 w-full max-w-[1036px] min-h-[711px] max-md:pt-24 max-md:max-w-full">
-      <div className="flex overflow-hidden flex-wrap gap-8 items-start h-[599px] max-md:max-w-full">
-        <div className="flex overflow-hidden flex-col pt-16 text-white min-w-[240px] w-[509px] max-md:max-w-full">
-          <div className="text-xl tracking-wide">SUMMER 2020</div>
-          <h1 className="mt-8 text-6xl font-bold tracking-wide leading-[80px] max-md:max-w-full max-md:text-4xl max-md:leading-[62px]">
-            Vita Classic Product
-          </h1>
-          <p className="mt-8 text-sm tracking-wide leading-5">
-            We know how large objects will act, We know how are objects will
-            act, We know
-          </p>
-          <form
-            className="flex gap-9 items-center self-start mt-8 font-bold text-center"
-            aria-label="Add product to cart"
-          >
-            <div
-              className="self-stretch my-auto text-2xl tracking-normal leading-none"
-              aria-label="Product price"
-            >
-              $16.48
-            </div>
-            <button
-              type="submit"
-              className="overflow-hidden self-stretch px-10 py-4 my-auto text-sm tracking-wide leading-loose bg-green-500 rounded-md max-md:px-5 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
-            >
-              ADD TO CART
-            </button>
-          </form>
-        </div>
-        <div className="flex overflow-hidden flex-col items-center min-w-[240px] w-[510px] max-md:max-w-full">
-          <img
-            loading="lazy"
-            src="/image/pic14.png.png"
-            alt="Vita Classic Product showcase"
-            className="object-contain max-w-full aspect-[0.74] w-[443px]"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+        <section className="relative bg-[#23856D] py-12 px-4 rounded-[5px]">
+                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+                  <div className="max-w-lg flex flex-col gap-6">
+                    <h4 className="font-Montserrat font-normal text-[20px] leading-[30px] text-white">
+                      SUMMER 2020
+                    </h4>
+                    <h1 className="font-Montserrat font-bold text-[48px] md:text-[58px] leading-[60px] md:leading-[80px] text-white">
+                      Vita Classic Product
+                    </h1>
+                    <p className="font-Montserrat font-medium text-[14px] leading-[20px] text-white">
+                      We know how large objects will act. We know how our objects will act. We know.
+                    </p>
+                    <div className="flex items-center gap-8">
+                      <h3 className="font-Montserrat font-bold text-[24px] leading-[32px] text-white">
+                        $16.48
+                      </h3>
+                      <button className="bg-[#2DC071] text-white py-3 px-6 rounded-[5px] hover:bg-[#27a05d] transition">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-1/2 flex justify-center">
+                    <Image
+                      src="/images/image16.jpg"
+                      alt="Vita Classic Product"
+                      width={400}
+                      height={400}
+                      className="w-full max-w-sm h-auto rounded-md"
+                    />
+                  </div>
+                </div>
+              </section>
+        
+        
+                
+                
+      
     </div>
   )
 }
 
-export default green
+export default ProductCard123

@@ -1,42 +1,77 @@
 import React from 'react';
+import Image from 'next/image';
 
-const EditorSection = () => {
+const Productionsection5 = () => {
   return (
-    <section className="py-16 px-4 min-h-screen flex flex-col justify-center bg-[#FAFAFA]">
-      {/* Editors Pick Title */}
-      <div id="shop" className="text-center mb-[-30px]" >
-        <h2 className="text-3xl font-bold">Editor&apos;s Pick</h2>
-        <p className="text-xl text-gray-700 mt-4">Problems trying to resolve the conflict between </p>
-      </div>
+    <div>
+      <section className="mt-12">
+                <div className="font-extrabold text-3xl gap-[10px] h-[55px] w-full mx-auto mb-6 text-center">
+                  <h1>EDITORS PICK</h1>
+                </div>
+                <div className="w-full mx-auto mb-12 text-center">
+                  <h1>Problems trying to resolve the conflict between</h1>
+                </div>
+      
+                <div className="flex justify-center gap-8 flex-wrap">
+                  <div className="relative w-[250px] h-[530px]">
+                    <Image
+                      src="/images/image20.jpg"
+                      className="w-full h-full object-cover rounded-md"
+                      alt="Men Collection"
+                      width={250}
+                      height={530}
+                    />
+                    <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-black py-2 px-6 rounded-md">
+                      Men
+                    </button>
+                  </div>
+      
+                  <div className="relative w-[250px] h-[530px]">
+                    <Image
+                      src="/images/card-item (1).jpg"
+                      className="w-full h-full object-cover rounded-md"
+                      alt="Women Collection"
+                      width={250}
+                      height={530}
+                    />
+                    <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-black py-2 px-6 rounded-md">
+                      Women
+                    </button>
+                  </div>
+      
+                  <div className="flex flex-col gap-8">
+                    <div className="relative w-[200px] h-[250px]">
+                      <Image
+                        src="/images/card-item (2).jpg"
+                        className="w-full h-full object-cover rounded-md"
+                        alt="Accessories Collection"
+                        width={200}
+                        height={250}
+                      />
+                      <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-black py-2 px-6 rounded-md">
+                        Accessories
+                      </button>
+                    </div>
+      
+                    <div className="relative w-[200px] h-[250px]">
+                      <Image
+                        src="/images/filter.jpg"
+                        className="w-full h-full object-cover rounded-md"
+                        alt="Kids Collection"
+                        width={200}
+                        height={250}
+                      />
+                      <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-black py-2 px-6 rounded-md">
+                        Kids
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+    </div>
+  )
+}
 
-      {/* Grid of Images */}
-      <div className="flex justify-center py-10 ">
-        <div className="flex flex-wrap gap-6 max-w-screen-xl w-full justify-center px-4">
-          {/* First Image (30% Width, Fixed Height 500px) */}
-          <div className="w-full md:w-[30%] h-[500px] p-2 hover:shadow-lg hover:scale-110 transition-transform duration-200 ease-in-out">
-            <img src="image/pic2.png.jpg" alt="Image 1" className="w-full h-full object-cover" />
-          </div>
+export default Productionsection5
 
-          {/* Second Image (20% Width, Fixed Height 500px) */}
-          <div className="w-full md:w-[20%] h-[500px] p-2 hover:shadow-lg hover:scale-110 transition-transform duration-200 ease-in-out">
-            <img src="image/pic3.png.jpg" alt="Image 2" className="w-full h-full object-cover" />
-          </div>
 
-          {/* Third and Fourth Image Container (stacked in column) */}
-          <div className="w-full md:w-[30%] flex flex-col gap-6 p-2 hover:shadow-lg hover:scale-110 transition-transform duration-200 ease-in-out">
-            {/* Third Image (Width 240px, Height 242px) */}
-            <div className="h-[231px] w-[240px]">
-              <img src="image/pic4.png.jpg" alt="Image 3" className="w-full h-full object-cover" />
-            </div>
-
-            {/* Fourth Image (Width 240px, Height 242px) */}
-            <div className="h-[231px] w-[240px] hover:shadow-lg hover:scale-110 transition-transform duration-200 ease-in-out">
-              <img src="image/pic5.png.jpg" alt="Image 4" className="w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-export default EditorSection;
