@@ -1,4 +1,4 @@
-import { kMaxLength } from "buffer"
+//import { kMaxLength } from "buffer"
 import { defineType } from "sanity"
 
 export const product = defineType({

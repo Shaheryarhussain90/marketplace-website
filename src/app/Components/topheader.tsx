@@ -37,10 +37,10 @@ const Header = () => {
           <div className="text-xl font-bold">Bandage</div>
           <ul className="flex space-x-6">
           <Link legacyBehavior href="#shop">
-                <a className="font-semibold text-sm text-[#737373]">Home</a>
+                <a className="hover:text-blue-500 font-semibold text-sm">Home</a>
               </Link>
            <li>
-                <a href="/sectionshop" className="font-semibold text-sm text-[#737373]">Shop</a>
+                <a href="/sectionshop" className="hover:text-blue-500 font-semibold text-sm">Shop</a>
                 </li>
             <li>
               <a href="/about" className="hover:text-blue-500 font-semibold text-sm">About</a>

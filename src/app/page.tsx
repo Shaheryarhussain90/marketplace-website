@@ -9,9 +9,9 @@ import Herosection from "./Components/herosection";
 
 import Green from "./Components/green";
 
-import Feature from "./Components/feature";
+// import Feature from "./Components/feature";
 
-import Team from './Components/team';
+
 
 import Sanitydata from "./Components/sanitydata/page"
 import Itemscard2 from "./Components/itemscard2";
@@ -29,14 +29,7 @@ export default function Home() {
       <Itemscard2/>
       <Green/>
      
-       <Feature/>
-  
-
-      
-      
-
-       *
-      
+       {/* //<Feature/> */}
 
 
     </div>

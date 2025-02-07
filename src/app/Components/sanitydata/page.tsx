@@ -3,13 +3,13 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Product } from "../../../../types/products";
 import { client } from "@/sanity/lib/client";
-import { allproduct, four } from "@/sanity/lib/qureries";
+import { allproduct } from "@/sanity/lib/qureries";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 import { addToCart } from "@/app/actions/actions";
 import Swal from 'sweetalert2'
 
-export default function page() {
+export default function Page() {
   const [product, setproduct] = useState<Product[]>([]);
   useEffect(() => {
     async function fetchproduct() {

@@ -1,13 +1,13 @@
-import React from 'react'
-import Image from 'next/image'
-import Home from '../page'
+import React from 'react';
+import Image from 'next/image';
+
 
 const Herosection = () => {
   return (
     <div  id="hero" className="relative w-full h-[716px]">
       {/* Background Image */}
-      <img
-        src="image/Pic1.png.jpg" 
+      <Image
+        src="/image/Pic1.png.jpg" 
         alt="maingirl" 
         height={716} 
         width={1440} 
